@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Country</title>
+    <!--   --------------------icon--------------- -->
+    <script src="https://kit.fontawesome.com/70fffd57a8.js" crossorigin="anonymous"></script>
+   <!-- --------------------- CSS ----------------- -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="information">
+        <div id="chooseCountry">Choose a Language to appear the Countries that speak it</div>
+        <div class="custom-select">
+        <select id="currentLang" onchange="getCountries();">
+            <option value="ara">Arabic</option>
+            <option value="eng">English</option>
+            <option value="spa">Spanish</option>
+            <option value="fra">French</option>
+            <option value="ita">Italian</option>
+        </select>
+    </div>
+        <div id="countryCount"></div>
+        <div id="container">
+            
+        </div>
+    </div>
+   
+    <script src="js/script.js"></script>
+</body>
+</html>

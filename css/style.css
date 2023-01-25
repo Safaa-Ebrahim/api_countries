@@ -1,0 +1,109 @@
+body{
+    -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-image:url(../images/9.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+}
+
+.oneCountry {
+    border: solid #545459 thin;
+    margin: 5px;
+    padding: 3px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 5px;
+    width: 200px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: ease .5s;
+}
+.oneCountry:hover{
+  transform: scale(1.1);
+  background-color: #e6e0e0;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#countryCount, #chooseCountry{
+    font-size: 24px;
+    text-align: center;
+    margin: 13px;
+    color: #0e6ec1;
+    text-shadow: 2px 2px #d2d6da;
+    transition: ease .5s;
+}
+#currentLang{
+    text-align: center;
+    
+}
+.custom-select{
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 10px;
+}
+.custom-select select,#backButton input{
+    background-color: #0e6ec1;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 82px;
+    color: white;
+    font-size: 15px;
+}
+
+.custom-select option:hover {
+    background-color: #eee;
+ }
+ .countryDetailPage{
+    width: 100%;
+    display: inline-block;
+ }
+.countryDetail{
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 500px;
+    overflow: hidden;
+    
+   
+}
+.countryDetail img{
+    margin-bottom: 15px;
+    width: 200px;
+}
+.countryDetail span:first-child{
+    color: #0e6ec1;
+    text-shadow: 2px 2px #d2d6da;
+}
+#backButton{
+    position: relative;
+    /* margin-left: -420px; */
+}
+#backButton i{
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    color: white;
+    
+}
+
+#backButton input:hover,#backButton i:hover{
+    transform: scale(1.1);
+}
